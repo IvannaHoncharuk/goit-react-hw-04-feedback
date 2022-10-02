@@ -8,7 +8,7 @@ export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
       {options.map(data => {
         return (
           <li key={data}>
-            <Button onClick={() => onLeaveFeedback(data)}>
+            <Button name = {data} onClick = {onLeaveFeedback}>
               {data.replace(/^./, data[0].toUpperCase())}
             </Button>
           </li>
